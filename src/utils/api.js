@@ -38,6 +38,11 @@ export default {
             }
         })
     },
+    // 取得题目列表
+    getProblemList()
+    {
+        return ajax('/problem/', 'get');
+    }
 }
 
 /**
