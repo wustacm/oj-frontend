@@ -75,6 +75,15 @@ export const SUBMISSION_VERDICTS = {
     // 判题机正在同步测试数据的标志
     'SYNC': {info: 'Compiler Data Syncing', color: 'primary'}
 }
+export const SUBMISSION_CODE_VERDICTS = {
+    '-1': 'WRONG_ANSWER',
+    '1': 'CPU_TIME_LIMIT_EXCEEDED',
+    '2': 'REAL_TIME_LIMIT_EXCEEDED',
+    '3': 'MEMORY_LIMIT_EXCEEDED',
+    '4': 'RUNTIME_ERROR',
+    '5': 'SYSTEM_ERROR',
+    '0': 'PASSED'
+}
 export const STORAGE_PROFILE_KEY = '_profile'
 export const PERMISSIONS = {
     MANAGE_PROBLEM: 'problem.manage_problem',

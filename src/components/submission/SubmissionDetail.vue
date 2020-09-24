@@ -76,7 +76,7 @@
 <script>
 import api from "@/utils/api";
 import message from "@/utils/message";
-import {SUBMISSION_VERDICTS} from "@/utils/constant";
+import {SUBMISSION_VERDICTS, SUBMISSION_CODE_VERDICTS} from "@/utils/constant";
 import {mapGetters} from 'vuex';
 
 export default {
@@ -112,6 +112,12 @@ export default {
         title: 'exit',
         render: (h, params) => {
           return h('span', params.row.exit_code)
+        }
+      }, {
+        title: '结果',
+        // key: 'result',
+        render: (h, params) => {
+          return h('code', SUBMISSION_CODE_VERDICTS[params.row.result])
         }
       }],
       result_data: []
